@@ -1,0 +1,112 @@
+// reset
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, cite, code, em, img, strong, sub, sup, i, dl, dt, dd, ol, ul, li,
+form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, footer, header, menu, nav, section, audio, video {
+  margin 0
+  padding 0
+}
+
+html {
+  line-height 1
+  font-size 14px
+  font-family "Microsoft YaHei", serif !important
+  height 100%
+}
+
+body {
+  height 100%
+  width: 100%;
+  background #f4f7fe
+}
+
+* {
+  // 滚动条样式
+
+  &::-webkit-scrollbar {
+    width 6px
+    height 6px
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background #0a8dff
+    border-radius 4px
+  }
+
+  &::-webkit-scrollbar-track {
+    background #e7e7e7
+  }
+
+  // 盒子模型
+  box-sizing border-box
+
+  &:before {
+    box-sizing border-box
+  }
+
+  &:after {
+    box-sizing border-box
+  }
+}
+
+ol, ul {
+  list-style none
+}
+
+a {
+  color #0a8dff
+  text-decoration none
+}
+
+table {
+  border-collapse collapse
+  border-spacing 0
+}
+
+// 记住密码样式
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-box-shadow 0 0 0 1000px #ffffff inset !important
+}
+
+// nprogress 顶部进度条自定义颜色
+#nprogress .bar {
+  height 2px !important
+  background #4827b6 !important
+}
+
+// 默认头像样式
+i.default-head {
+  height 35px
+  width 35px
+  background #CCCCCC
+  border-radius 50%
+  display inline-flex
+  justify-content center
+  align-items center
+  color #ffffff
+}
+
+img.default-head {
+  height 35px
+  width 35px
+  border-radius 50%
+}
+
+// ant-design-vue 样式
+// a-dropdown 下拉菜单最小宽度
+.ant-dropdown {
+  min-width 150px
+}
+
+// a-table 操作项：图标之间的分割线
+.ant-table-wrapper {
+  .line {
+    display inline-block
+    width 1px
+    height 14px
+    vertical-align middle
+    background #e8e8e8
+    margin 0 10px
+    margin-top -3px
+  }
+}
